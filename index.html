@@ -10,19 +10,20 @@
 </head>
 
 <body>
+    <div class="background"></div>
     <div class="app">
         <h1 id="title">Trak<span>It</span></h1>
         <div class="form-container" id="form-container">
             <form class="form" id="form">
                 <label for="nameInput">Nombre de la actividad</label>
-                <input type="text" id="nameInput" required placeholder="Ej: Estudiar Javascript">
+                <input type="text" id="nameInput" class="input" required placeholder="Ej: Estudiar Javascript">
                 <div class="checkJob">
                     <input type="checkbox" id="isJobInput">
                     <label for="isJobInput">Marcar como tarifado</label>
                 </div>
                 <div class="jobForm" id="jobForm">
                     <label for="hourPrice">$/Hora</label>
-                    <input type="number" value="0" id="hourPrice" placeholder="Tarifa por hora">
+                    <input type="number" value="0" class="input" id="hourPrice" placeholder="Tarifa por hora">
                 </div>
                 <button type="submit" id="#addButton">Crear</button>
             </form>
@@ -34,12 +35,12 @@
                 <span id="activityTime">0</span>
                 <span id="activityPrice">$15/h</span>
                 <span id="activityTotal">$7.3</span>
-                <button id="#startButton" class="active">Iniciar</button>
-                <button id="#stopButton">Finalizar</button>
+                <button id="startButton" class="active">Iniciar</button>
+                <button id="pauseButton">Pausar</button>
+                <button id="stopButton">Finalizar</button>
             </div>
-            <div class="history">
+            <div class="history" id="history">
                 <p>Historial de actividades</p>
-                
             </div>
         </div>
     </div>
