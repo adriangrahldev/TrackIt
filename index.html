@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrackIt</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <mehjka name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TrackIt</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="app">
+        <h1 id="title">Trak<span>It</span></h1>
+        <div class="form-container" id="form-container">
+            <form class="form" id="form">
+                <label for="nameInput">Nombre de la actividad</label>
+                <input type="text" id="nameInput" required placeholder="Ej: Estudiar Javascript">
+                <div class="checkJob">
+                    <input type="checkbox" id="isJobInput">
+                    <label for="isJobInput">Marcar como tarifado</label>
+                </div>
+                <div class="jobForm" id="jobForm">
+                    <label for="hourPrice">$/Hora</label>
+                    <input type="number" value="0" id="hourPrice" placeholder="Tarifa por hora">
+                </div>
+                <button type="submit" id="#addButton">Crear</button>
+            </form>
+
+        </div>
+        <div class="activity">
+            <div class="activityControl" id="activityControl">
+                <span id="activityName">#Ejemplo</span>
+                <span id="activityTime">0</span>
+                <span id="activityPrice">$15/h</span>
+                <span id="activityTotal">$7.3</span>
+                <button id="#startButton" class="active">Iniciar</button>
+                <button id="#stopButton">Finalizar</button>
+            </div>
+            <div class="history">
+                <p>Historial de actividades</p>
+                
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
