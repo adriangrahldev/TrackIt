@@ -137,6 +137,8 @@ label{
 }
 #history ul li{
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #history ul li span{
   flex: 1;
