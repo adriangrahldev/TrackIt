@@ -28,6 +28,7 @@ label{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .app #title {
@@ -41,6 +42,10 @@ label{
   color: #afba14;
 }
 
+.app #form-container .form{
+  width: 80%;
+  margin: 0 auto;
+}
 .app #form-container .form .input {
   display: block;
   padding: 5px;
@@ -48,11 +53,13 @@ label{
   margin-bottom: 15px;
   border-radius: 5px;
   border: 1px solid #c9c9c9;
-  width: 90%;
+  width: 98%;
 }
 .app #form-container .form .checkJob {
   display: flex;
   column-gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 .app #form-container #form button {
   padding: 8px;
@@ -70,7 +77,9 @@ label{
   border: 2px solid #151061;
   color: #151061;
 }
-
+.jobForm{
+  margin-top: 15px;
+}
 .jobForm,
 .timer {
     display: none;
