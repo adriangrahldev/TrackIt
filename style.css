@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #dfe6e9;
+}
+
+.app {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app #title {
+  color: #151061;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.app #title span {
+  text-align: center;
+  color: #afba14;
+}
+
+.app #form-container .form input {
+  display: block;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+}
+.app #form-container .form .checkJob {
+  display: flex;
+  column-gap: 5px;
+}
+.app #form-container #form button {
+  padding: 8px;
+  width: 80px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #afba14;
+  color: white;
+}
+.app #form-container #form button:hover {
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid #151061;
+  color: #151061;
+}
+
+.jobForm,
+.timer {
+    display: none;
+}
+
+.app .activity  {
+    margin-top: 15px;
+}
+.app .activity  .activityControl{
+    display: none;
+    padding: 10px;
+    background-color: #e5e5e5;
+    column-gap: 10px;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid #151061;
+}
+.app .activity .activityControl button{
+    width: 20%;
+    display: none;
+    border: none;
+    background-color: #151061;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+}
+.app .activity .activityControl button:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+.app .activity .activityControl .active{
+    display: inline-block
+}
+
+.app .activity .activityControl span{
+    width: 20%;
+}
+.app .activity .activityControl #activityName{
+    width: 35%;
+}
+.app .activity .history{
+    padding: 5px;
+
+    background-color: #e5e5e5;
+}
+.app .activity .history p{
+    text-align: center;
+    font-weight: bold;
+    color: #151061;
+}
+
+ul{
+    list-style: none;
+}
+.list span{
+    width: 20%;
+}
