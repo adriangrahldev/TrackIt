@@ -71,6 +71,8 @@ function crearActividad() {
     document.getElementById("activityTotal").style.display = "inline-block";
   }
   // iniciarCronometro(actividad);
+  jobForm.style.display = "none";
+
 }
 
 function iniciarCronometro(actividad) {
